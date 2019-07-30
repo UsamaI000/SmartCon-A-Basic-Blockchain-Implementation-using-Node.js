@@ -1,0 +1,37 @@
+{{>header}}
+<title>Contract</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body>
+    
+    
+    <div class="row justify-content-center ">
+        <div class=" shadow-lg p-3 mb-5 bg-light rounded" >
+            <br>
+           <h4 class="text text-dark text-center">Create Contract</h4>
+                        <br>
+            <form class="form" method="POST" action="/contract" >
+                
+                <div class="form-group">
+                    <label class="text text-dark"><b>Recipient</b></label>
+                    <input class="form-control form-control-lg" placeholder="Recipient" name="recipient" value="{{qs.recipient}}" type="text">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-dark btn-lg btn-block">Create</button>
+                </div>
+            </form>
+         
+            </div>
+        </div>
+    </div>
+
+ 
+
+</script>
+<style>body {
+  height: 100%;
+  background-color: #fff;
+}</style>
+</body>

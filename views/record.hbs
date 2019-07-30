@@ -1,0 +1,45 @@
+{{> header }}
+<title>Record</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<body>
+    
+
+<div class="container-fluid ">
+  <br>
+  <div class="shadow-lg p-3 mb-5 bg-light rounded">
+  <h4 class="text-center text-dark">Transaction record of {{address}}</h4>
+  <br>          
+  <div class="float-right"></div>
+  <table class="table table-dark table-hover table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Amount</th>
+        <th>Sender</th>
+        <th>Recipient</th>
+        <th>Transaction ID</th>
+      </tr>
+    </thead>
+    <tbody class=" bg-light">
+    {{#each data }}   
+        <tr>
+            {{#each this as |key value|}}          
+                <td><div class="text text-dark">{{key}}</div></td>
+            {{/each}} 
+        </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+<style>body {
+  height: 100%;
+  background-color: #fff;
+}</style>
+
+</body>

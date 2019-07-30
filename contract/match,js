@@ -1,0 +1,22 @@
+const md5File = require('md5-file')
+ 
+/* Async usage */
+/*md5File('LICENSE.md', (err, hash) => {
+  if (err) throw err
+ 
+  console.log(`The MD5 sum of LICENSE.md is: ${hash}`)
+})*/
+ 
+/* Sync usage */
+const hash1 = md5File.sync('contract.js')
+console.log(`The MD5 sum of LICENSE.md is: ${hash1}`)
+
+const hash2 = md5File.sync('contract1.js')
+console.log(`The MD5 sum of LICENSE.md is: ${hash2}`)
+
+if (hash1 ===   hash2){
+    console.log('true');
+}
+else{
+    console.log('false');
+}

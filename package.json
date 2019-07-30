@@ -1,0 +1,34 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "FYP linear blockchain",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node1": "nodemon --watch src -e js,hbs src/api.js 3001 http://localhost:3001",
+    "node2": "nodemon --watch src -e js src/api.js 3002 http://localhost:3002",
+    "node3": "nodemon --watch src -e js,hbs src/api.js 3003 http://localhost:3003",
+    "node4": "nodemon --watch src -e js src/api.js 3004 http://localhost:3004",
+    "node5": "nodemon --watch src -e js src/api.js 3005 http://localhost:3005",
+    "node6": "nodemon --watch src -e js,hbs src/api.js 3003 http://localhost:3006",
+    "node7": "nodemon --watch src -e js src/api.js 3004 http://localhost:3007",
+    "node8": "nodemon --watch src -e js src/api.js 3005 http://localhost:3008"
+  },
+  "author": "Usama",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "handlebars": "^4.1.2",
+    "hbs": "^4.0.4",
+    "md5-file": "^4.0.0",
+    "nodemon": "^1.18.10",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sha256": "^0.2.0",
+    "uuid": "^3.3.2"
+  }
+}

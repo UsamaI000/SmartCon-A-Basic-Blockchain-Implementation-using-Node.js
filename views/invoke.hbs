@@ -1,0 +1,37 @@
+{{> header }}
+<title>Invoke Contract</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<body>
+    
+ <div class='alert alert-info align align-centre'>Give necesssary Inforamtion to invoke the Contract</div>
+ <div class="row justify-content-center ">
+        <div class=" shadow-lg p-3 mb-5 bg-light rounded" >
+            <br>
+           <h4 class="text text-dark text-center">Give amount</h4>
+                        <br>
+            <form class="form" method="POST" action="/invoke" onsubmit=myalert()>
+                <div class="form-group">
+                     <b class="text text-dark">Sender</b>
+                    <input class="form-control form-control-lg"  name="sender" value="{{sender}}" readonly>
+                </div>
+                <div class="form-group">
+                     <b class="text text-dark">Recipient</b>
+                    <input class="form-control form-control-lg" name="recipient" value="{{recipient}}" readonly>
+                </div>
+                <div class="form-group">
+                     <b class="text text-dark">Enter Amount</b>
+                    <input class="form-control form-control-lg" placeholder="Amount" name="amount" value="{{qs.amount}}" type=amount>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-dark btn-lg btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body> 
